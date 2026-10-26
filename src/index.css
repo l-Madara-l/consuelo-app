@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Warm Serene Palette: Linen, Clay Terracotta, Sage, Espresso */
+    --canvas: #FAF7F2;
+    --canvas-subtle: #F2ECE4;
+    --surface: #FFFFFF;
+    --surface-hover: #F8F4EE;
+    --border-sand: #E6DFD5;
+    --border-soft: #EDE6DC;
+
+    --ink-primary: #1F1D1B;
+    --ink-secondary: #6B655F;
+    --ink-faint: #9C948B;
+
+    --clay: #A35C46;
+    --clay-hover: #8F4E3A;
+    --clay-tint: #F7ECE8;
+    --clay-border: #E8CFC6;
+
+    --sage: #597360;
+    --sage-hover: #4B6352;
+    --sage-tint: #EEF4EF;
+    --sage-border: #CADACD;
+
+    --amber-warm: #C28236;
+    --amber-tint: #FBF4EB;
+    
+    --rose-soft: #B85C5C;
+    --rose-tint: #FBF0F0;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--ink-primary);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Somatic Breathing Circle */
+@keyframes breatheCycle {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.65;
+  }
+  35% {
+    transform: scale(1.18);
+    opacity: 1;
+    box-shadow: 0 0 16px 2px rgba(89, 115, 96, 0.25);
+  }
+  60% {
+    transform: scale(1.14);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.92);
+    opacity: 0.65;
+  }
+}
+
+.animate-breathe {
+  animation: breatheCycle 14s ease-in-out infinite;
+}
+
+/* Smooth Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Warm Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D0C5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A35C46;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
