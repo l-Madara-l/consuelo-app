@@ -64,11 +64,17 @@ export const Navbar: React.FC<NavbarProps> = ({
               <HeartHandshake className="w-5 h-5 group-hover:rotate-6 transition-transform" />
             </div>
             <div>
-              <span className="text-xl font-normal tracking-tight text-[#1F1D1B] font-editorial flex items-center gap-1">
-                Consuelo<span className="text-[#A35C46] italic font-serif">&</span>Presencia
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-xl font-normal tracking-tight text-[#1F1D1B] font-editorial flex items-center gap-1">
+                  Consuelo<span className="text-[#A35C46] italic font-serif">&</span>Presencia
+                </span>
+                <span className="hidden sm:inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-[#F2ECE4] border border-[#E6DFD5] text-[#A35C46] font-mono font-semibold tracking-wide">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A35C46]" />
+                  aftMadara
+                </span>
+              </div>
               <p className="text-[11px] text-[#6B655F] tracking-wider uppercase font-medium">
-                El Arte de Sostener y Escuchar
+                El Arte de Sostener y Escuchar <span className="sm:hidden text-[#A35C46] font-mono font-bold">• aftMadara</span>
               </p>
             </div>
           </div>

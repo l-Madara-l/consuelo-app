@@ -71,9 +71,15 @@ export const CourseView: React.FC<CourseViewProps> = ({
       <div className="relative rounded-3xl bg-gradient-to-br from-[#F5ECE5] via-[#FAF7F2] to-[#FAF7F2] border border-[#E8CFC6] p-7 sm:p-12 overflow-hidden shadow-sm">
         
         <div className="relative z-10 max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E8CFC6] text-[#A35C46] text-xs font-semibold tracking-wide shadow-2xs">
-            <Feather className="w-3.5 h-3.5" />
-            <span>Tratado Práctico & Metodología de Acompañamiento</span>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E8CFC6] text-[#A35C46] text-xs font-semibold tracking-wide shadow-2xs">
+              <Feather className="w-3.5 h-3.5" />
+              <span>Tratado Práctico & Metodología de Acompañamiento</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#F2ECE4] border border-[#E6DFD5] text-[#1F1D1B] text-xs font-mono font-medium shadow-2xs">
+              <span className="text-[#A35C46] font-bold">Por:</span>
+              <span className="font-semibold">aftMadara</span>
+            </div>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-normal text-[#1F1D1B] font-editorial tracking-tight leading-[1.14]">

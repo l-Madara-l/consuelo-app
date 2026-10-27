@@ -124,13 +124,26 @@ export function App() {
         )}
       </main>
 
-      {/* Minimal Literary Footer */}
-      <footer className="border-t border-[#E8E3DB] bg-[#FBF9F5] py-10 px-4 text-center text-xs text-[#9E9891] space-y-2">
-        <p className="font-serif italic text-sm text-[#6E6963] max-w-md mx-auto">
+      {/* Literary Artisan Footer with aftMadara Ownership Seal */}
+      <footer className="border-t border-[#E6DFD5] bg-[#FAF7F2] py-12 px-4 text-center text-xs text-[#6B655F] space-y-3">
+        <p className="font-editorial italic text-base text-[#1F1D1B] max-w-md mx-auto">
           "Consolar no es tener las respuestas perfectas, sino el coraje sagrado de no huir del dolor ajeno."
         </p>
-        <p className="font-mono text-[11px] text-[#9E9891]">
-          Consuelo & Presencia • Práctica de Acompañamiento
+        
+        {/* Artisan Ownership Stamp */}
+        <div className="flex items-center justify-center gap-3 pt-2">
+          <div className="h-px w-8 sm:w-16 bg-[#E6DFD5]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F2ECE4] border border-[#E6DFD5] text-[#1F1D1B] shadow-2xs">
+            <span className="w-2 h-2 rounded-full bg-[#A35C46] animate-pulse" />
+            <span className="text-xs font-mono tracking-wider font-semibold">
+              Propiedad & Autoría: <span className="text-[#A35C46] font-bold">aftMadara</span>
+            </span>
+          </div>
+          <div className="h-px w-8 sm:w-16 bg-[#E6DFD5]" />
+        </div>
+
+        <p className="font-mono text-[11px] text-[#7A7269]">
+          Consuelo & Presencia • Obra y concepción intelectual por <span className="font-bold text-[#1F1D1B]">aftMadara</span> • Todos los derechos reservados
         </p>
       </footer>
 
